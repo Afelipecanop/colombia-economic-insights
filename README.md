@@ -231,8 +231,12 @@ Las visualizaciones automáticas están temporalmente deshabilitadas. Usa los CS
 ### Probar configuración
 
 ```bash
+# Ejecuta el verificador automático de configuración
 python src/verify_config.py
+
+# Prueba básica de conexión
 python src/main.py --test-connection
+
+# Prueba análisis sin Looker
+python src/main.py --table TU_TABLA
 ```
-Table No_implementada --looker
-``` 
