@@ -212,5 +212,5 @@ python src/main.py --test-connection
 python src/main.py --table TU_TABLA
 
 # Prueba análisis con Looker (requiere configuración completa)
-python src/main.py --table TU_TABLA --looker
-```
+python src/main.py --table No_implementada --looker
+``` 
