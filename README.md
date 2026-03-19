@@ -208,9 +208,5 @@ Las visualizaciones automáticas están temporalmente deshabilitadas. Usa los CS
 python src/verify_config.py
 python src/main.py --test-connection
 ```
-
-python src/main.py --table TU_TABLA
-
-# Prueba análisis con Looker (requiere configuración completa)
-python src/main.py --table No_implementada --looker
+Table No_implementada --looker
 ``` 
