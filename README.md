@@ -6,7 +6,7 @@ Proyecto para extraer, procesar y analizar datos económicos de Colombia desde B
 
 Este proyecto integra datos de BigQuery con Python para generar insights económicos sobre Colombia. Incluye análisis estadístico automatizado, generación de reportes CSV y un dashboard web interactivo construido con Streamlit.
 
-## 🗄️ Extracción de Datos y Metodología SQL
+## Extracción de Datos y Metodología SQL
 
 Para este análisis, se utilizaron los datasets públicos del **Banco Mundial (World Bank WDI)** alojados en **Google BigQuery**. La extracción se realizó mediante una consulta optimizada que combina información geográfica y métricas económicas.
 
