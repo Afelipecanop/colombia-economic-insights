@@ -6,6 +6,32 @@ Proyecto para extraer, procesar y analizar datos económicos de Colombia desde B
 
 Este proyecto integra datos de BigQuery con Python para generar insights económicos sobre Colombia. Incluye análisis estadístico automatizado, generación de reportes CSV y un dashboard web interactivo construido con Streamlit.
 
+## 🗄️ Extracción de Datos y Metodología SQL
+
+Para este análisis, se utilizaron los datasets públicos del **Banco Mundial (World Bank WDI)** alojados en **Google BigQuery**. La extracción se realizó mediante una consulta optimizada que combina información geográfica y métricas económicas.
+
+### 🔍 Consulta de Extracción (ETL)
+Se realizó un `JOIN` entre la tabla de resumen de países y la tabla de indicadores históricos para garantizar la integridad de los datos de Colombia:
+
+```sql
+SELECT 
+    t1.country_code,
+    t1.short_name AS country,
+    t1.currency_unit,
+    t2.year,
+    t2.value AS inflation_rate
+FROM 
+    `bigquery-public-data.world_bank_wdi.country_summary` AS t1
+JOIN 
+    `bigquery-public-data.world_bank_wdi.indicators_data` AS t2 
+    ON t2.country_code = t1.country_code
+WHERE 
+    t2.indicator_code = 'FP.CPI.TOTL.ZG' -- Código para Inflación (Precios al Consumidor)
+    AND t1.short_name = 'Colombia'
+ORDER BY 
+    t2.year ASC;
+
+
 ## Estructura del Proyecto
 
 ```
