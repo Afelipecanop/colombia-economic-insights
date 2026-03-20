@@ -29,8 +29,8 @@ WHERE
     t2.indicator_code = 'FP.CPI.TOTL.ZG' -- Código para Inflación (Precios al Consumidor)
     AND t1.short_name = 'Colombia'
 ORDER BY 
-    t2.year ASC;
-
+    t2.year ASC;S
+```
 
 ## Estructura del Proyecto
 
