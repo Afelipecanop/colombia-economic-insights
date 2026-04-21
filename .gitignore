@@ -4,6 +4,5 @@ client_secret*.json
 service-account-key.json
 venv/
 __pycache__/
-*.csv
-output/
+# output/ y CSVs permitidos para Streamlit Cloud
 config/
