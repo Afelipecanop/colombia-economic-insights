@@ -10,7 +10,7 @@ Este proyecto integra datos de BigQuery con Python para generar insights económ
 
 Para este análisis, se utilizaron los datasets públicos del **Banco Mundial (World Bank WDI)** alojados en **Google BigQuery**. La extracción se realizó mediante una consulta optimizada que combina información geográfica y métricas económicas.
 
-### 🔍 Consulta de Extracción (ETL)
+###  Consulta de Extracción (ETL)
 Se realizó un `JOIN` entre la tabla de resumen de países y la tabla de indicadores históricos para garantizar la integridad de los datos de Colombia:
 
 ```sql
@@ -134,11 +134,11 @@ Los siguientes archivos CSV se generan en el directorio `output/`:
 
 ### Estadísticas Incluidas
 
-- 📊 Media, mediana, desviación estándar
-- 📈 Tendencias año a año (% cambio interanual)
-- 📉 Percentiles (10%, 25%, 50%, 75%, 90%, 95%, 99%)
-- 🎯 Detección automática de outliers (método IQR)
-- 📅 Cobertura temporal completa de datos
+-  Media, mediana, desviación estándar
+-  Tendencias año a año (% cambio interanual)
+-  Percentiles (10%, 25%, 50%, 75%, 90%, 95%, 99%)
+-  Detección automática de outliers (método IQR)
+-  Cobertura temporal completa de datos
 
 ## Dashboard Web Interactivo (Streamlit)
 
@@ -163,20 +163,20 @@ http://localhost:8501
 
 ### Características del Dashboard
 
-- 📊 **Visualizaciones Interactivas**: Gráficos de series temporales, distribuciones y tendencias
-- 📈 **Métricas en Tiempo Real**: KPIs principales en tarjetas
-- 📉 **Análisis de Tendencias**: Medias móviles y cambios porcentuales
-- 📋 **Exploración de Datos**: Tablas interactivas con filtros
-- 📥 **Descargas**: Exportar datos en formato CSV
-- 🎯 **Análisis de Outliers**: Detección y visualización de valores atípicos
+-  **Visualizaciones Interactivas**: Gráficos de series temporales, distribuciones y tendencias
+-  **Métricas en Tiempo Real**: KPIs principales en tarjetas
+-  **Análisis de Tendencias**: Medias móviles y cambios porcentuales
+-  **Exploración de Datos**: Tablas interactivas con filtros
+-  **Descargas**: Exportar datos en formato CSV
+-  **Análisis de Outliers**: Detección y visualización de valores atípicos
 
 ### Pestañas Disponibles
 
-1. **📈 Resumen**: Vista general con métricas clave y gráficos principales
-2. **📊 Estadísticas**: Análisis detallado de estadísticas y percentiles
-3. **📉 Tendencias**: Análisis de tendencias con medias móviles
-4. **📋 Datos**: Tablas de datos crudos con opciones de descarga
-5. **ℹ️ Información**: Documentación del proyecto y metodología
+1. ** Resumen**: Vista general con métricas clave y gráficos principales
+2. ** Estadísticas**: Análisis detallado de estadísticas y percentiles
+3. ** Tendencias**: Análisis de tendencias con medias móviles
+4. ** Datos**: Tablas de datos crudos con opciones de descarga
+5. ** Información**: Documentación del proyecto y metodología
 
 ## Ejemplos de Uso
 
@@ -195,13 +195,13 @@ python src/main.py --test-connection
 
 | Componente | Estado |
 |---|---|
-| Conexión a BigQuery | ✅ Implementado |
-| Extracción de datos | ✅ Implementado |
-| Análisis estadístico automatizado | ✅ Implementado |
-| Generación de reportes CSV | ✅ Implementado |
-| Dashboard web interactivo (Streamlit) | ✅ Implementado |
-| Integración con Looker Studio | ❌ No implementado |
-| Visualizaciones automáticas (matplotlib) | ⏳ Pendiente (problemas de compatibilidad) |
+| Conexión a BigQuery |  Implementado |
+| Extracción de datos |  Implementado |
+| Análisis estadístico automatizado |  Implementado |
+| Generación de reportes CSV |  Implementado |
+| Dashboard web interactivo (Streamlit) |  Implementado |
+| Integración con Looker Studio |  No implementado |
+| Visualizaciones automáticas (matplotlib) |  Pendiente (problemas de compatibilidad) |
 
 ## Solución de Problemas
 
